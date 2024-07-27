@@ -14,8 +14,7 @@ class Job(models.Model):
     description = models.TextField()
     company = models.ForeignKey(Company, on_delete=models.CASCADE)
     location = models.CharField(max_length=255)
-    date_posted = models.DateTimeField(auto_now_add=True)
-    #hello
+    date_posted = models.DateTimeField(auto_now_add=True)                                                                   
 
     def __str__(self):
         return self.title
